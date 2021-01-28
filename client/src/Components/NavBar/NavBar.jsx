@@ -6,23 +6,23 @@ import './NavBar.min.css'
 const NavBar = () => {
     return (
         <div className="nav-bar">
-            <div className="nav-link logo">
+            {/* <div className="nav-link logo">
                 <Link to="/"> Logo</Link>
-            </div>
+            </div> */}
             <div className="nav-link home">
                 <Link to="/"> Home</Link>
             </div>
             <div className="nav-link projects">
-                <Link to="/"> Projects</Link>
+                <Link to="/projects"> Projects</Link>
             </div>
             <div className="nav-link experience">
-                <Link to="/"> Experience</Link>
+                <Link to="/experience"> Experience</Link>
             </div>
             <div className="nav-link about">
-                <Link to="/"> About Me</Link>
+                <Link to="/about"> About Me</Link>
             </div>
             <div className="nav-link contact">
-                <Link to="/"> Get in touch</Link>
+                <Link to="/contact"> Get in touch</Link>
             </div>
         </div>
     );

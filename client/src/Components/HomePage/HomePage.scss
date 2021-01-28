@@ -1,0 +1,27 @@
+.home-page{
+    position: relative;
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    // border: 1px solid orange;
+
+    .logo{
+        font-size: 150px;
+        display: inline-block;
+        // transform: rotateZ(-11deg) rotateX(10deg);
+    }
+
+    .personal-info{
+
+        .name{
+            font-size: 25px;
+
+            span{
+                color: var(--secondary-color);
+            }
+        }
+    }
+}

@@ -3,9 +3,10 @@
 Just trying to create an isolated space for myself to showcase my projects.
 ### Todo
 #### frontEnd
-- [ ] Navigation Bar.
+- [x] Navigation Bar.
+- [x] Home Component.
+- [ ] Personal Information card.
 - [ ] Design a Logo.
-- [ ] Home Component.
 - [ ] Projects Component.
 - [ ] Create thumbnails for my major projects.
 - [ ] Experience Component.

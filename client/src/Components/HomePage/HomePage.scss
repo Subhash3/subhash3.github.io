@@ -1,47 +1,55 @@
 .home-page{
     position: relative;
     width: 100%;
-    min-height: 90vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
     // border: 1px solid orange;
+
+    div{
+        height: auto;
+        display: grid;
+        place-items: center;
+    }
 
     .logo{
         font-size: 150px;
-        display: inline-block;
-        color: var(--c7);
-        // transform: rotateZ(-11deg) rotateX(10deg);
+        // background-color:  red;
+        // clip-path: polygon(10% 0, 78% 0, 120% 100%, 0% 100%);
     }
 
     .personal-info{
         display: flex;
         flex-direction: column;
-        align-items: center;
+        justify-content: center;
         padding: 10px;
-        // border: 1px solid red;
+        min-width: 60%;
+        clip-path: polygon(0 0, 69% 0, 95% 100%, 0% 100%);
+        background-color: rgb(241, 255, 231);
+        // border: 1px solid orange;
 
         div{
             margin: 8px 0;
         }
 
         .sub-title{
-            color: var(--c5);
+            color: var(--c1);
         }
 
         .name{
             font-size: 25px;
             white-space: pre;
+            display: flex;
+            flex-direction:row;
 
             span{
                 display: inline-block;
-                color: var(--c5);
+                // color: var(--c5);
                 // animation: shake 300ms ease-in-out 1 alternate;
                 
                 &.capital{
                     font-size: 30px;
-                    color: var(--c4);
+                    color: var(--c2);
                 }
 
                 &:hover{

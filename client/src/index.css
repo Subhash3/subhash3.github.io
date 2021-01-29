@@ -5,15 +5,9 @@
 }
 
 :root{
-  --primary-color: black;
-  --secondary-color: rgb(0, 135, 197);
-  --teritary-color: #f8f9fa;
-
-  --c1: #1d3557;
-  --c2: #457b9d ;
-  --c3: #a8dadc;
-  --c4: #e63946;
-  --c5: #f1faee;
+  --c1: black;
+  --c2: #155f4e;
+  --c3: rgb(241, 255, 231);
 }
 
 body {
@@ -25,7 +19,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
   overflow-x: hidden;
-  background-color: var(--c1);
+  background-color: #0baa85;
 }
 
 code {

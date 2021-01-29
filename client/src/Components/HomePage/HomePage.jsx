@@ -22,7 +22,7 @@ const HomePage = () => {
     return (
         <div className="home-page">
             <div className="personal-info">
-                {/* <div className="name">
+                <div className="name">
                     {separateLettersOfName("Subhash Sarangi").map(letterElement => letterElement)}
                 </div>
                 <div className="sub-title">Full Stack Developer | Deep Learning Enthusiast</div>
@@ -31,9 +31,9 @@ const HomePage = () => {
                     <div className="instagram"><InstagramIcon /></div>
                     <div className="github"><GitHubIcon /></div>
                     <div className="linkedin"><LinkedInIcon /></div>
-                </div> */}
+                </div>
             </div>
-            <div className="logo">S.S</div>
+            <div className="logo">Logo</div>
         </div>
     );
 }

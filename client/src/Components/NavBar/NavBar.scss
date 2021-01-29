@@ -63,18 +63,6 @@
         }
     }
 
-    // &::before{
-    //     position: absolute;
-    //     content: "";
-    //     width: 100px;
-    //     height: 100px;
-    //     border-radius: 50%;
-    //     transform: scale(10);
-    //     left: 80%;
-    //     bottom: 80%;
-    //     background-color: var(--c2);
-    // }
-
     &.vertical{
         top: 0%;
         left: 10px;
@@ -108,7 +96,7 @@
 
             a:nth-child(1){
                 svg{
-                    --size: 15px;
+                    --size: 18px;
                     width: var(--size);
                     height: var(--size);
                     fill: var(--c1);

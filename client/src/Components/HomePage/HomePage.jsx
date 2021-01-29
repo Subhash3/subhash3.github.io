@@ -32,8 +32,11 @@ const HomePage = () => {
                     <div className="github"><GitHubIcon /></div>
                     <div className="linkedin"><LinkedInIcon /></div>
                 </div>
+                <div className="connect-btn">Connect</div>
             </div>
-            <div className="logo">Logo</div>
+            <div className="right-card">
+                <div className="logo">SS</div>
+            </div>
         </div>
     );
 }

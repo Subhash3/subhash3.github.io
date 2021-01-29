@@ -60,21 +60,6 @@ const NavBar = ({ vertical }) => {
                     iconDisplay={item.iconDisplay}
                 />
             })}
-            {/* <div className="nav-link home">
-                <Link to="/"> Home</Link>
-            </div>
-            <div className="nav-link projects">
-                <Link to="/projects"> Projects</Link>
-            </div>
-            <div className="nav-link experience">
-                <Link to="/experience"> Experience</Link>
-            </div>
-            <div className="nav-link about">
-                <Link to="/about"> About Me</Link>
-            </div>
-            <div className="nav-link contact">
-                <Link to="/contact"> Get in touch</Link>
-            </div> */}
         </div>
     );
 }
@@ -82,7 +67,7 @@ const NavBar = ({ vertical }) => {
 const NavItem = ({ text, linkTo, className, Icon, iconDisplay }) => {
     return (
         <div className={`nav-link ${className}`}>
-            {iconDisplay ? <Icon /> : null}
+            {iconDisplay ? <Link to={linkTo}><Icon /></Link> : null}
             <Link to={linkTo}>{text}</Link>
         </div>
     )

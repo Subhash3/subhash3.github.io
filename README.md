@@ -5,7 +5,9 @@ Just trying to create an isolated space for myself to showcase my projects.
 #### frontEnd
 - [x] Navigation Bar.
 - [x] Home Component.
-- [ ] Personal Information card.
+- [x] Vertical Navbar.
+- [x] Personal Information card.
+- [x] Image as a placeholder for logo.
 - [ ] Design a Logo.
 - [ ] Projects Component.
 - [ ] Create thumbnails for my major projects.

@@ -11,7 +11,7 @@
     .logo{
         font-size: 150px;
         display: inline-block;
-        color: var(--c3);
+        color: var(--c7);
         // transform: rotateZ(-11deg) rotateX(10deg);
     }
 
@@ -23,23 +23,73 @@
         // border: 1px solid red;
 
         div{
-            margin: 15px 0;
+            margin: 8px 0;
+        }
+
+        .sub-title{
+            color: var(--c5);
         }
 
         .name{
             font-size: 25px;
+            white-space: pre;
 
             span{
-                color: var(--c3);
+                display: inline-block;
+                color: var(--c5);
+                // animation: shake 300ms ease-in-out 1 alternate;
+                
+                &.capital{
+                    font-size: 30px;
+                    color: var(--c4);
+                }
+
+                &:hover{
+                    animation-delay: 0 !important;
+                    animation: shake 300ms ease-in-out 1 alternate;
+                }
             }
         }
 
         .social-links{
             display: flex;
-
+            // border: 1px solid red;
+            
             div{
                 margin: 0 5px;
+                // border: 1px solid blue;
+                
+                .MuiSvgIcon-root{
+                    cursor: pointer;
+                    --size: 26px;
+                    width: var(--size);
+                    height: var(--size);
+                    fill: var(--c1);
+                }
             }
         }
     }
 }
+
+
+@keyframes shake {
+    0%{
+        transform: rotateZ(-10deg) translateY(-8px);
+    }
+
+    25%{
+        transform: rotateZ(0deg) translateY(-3px);
+    }
+
+    50%{
+        transform: rotateZ(20deg) translateY(0px);
+    }
+
+    75%{
+        transform: rotateZ(10deg) translateY(-3px);
+    }
+
+    100%{
+        transform: rotateZ(0deg) translateY(0px);
+    }
+  }

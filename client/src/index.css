@@ -9,11 +9,11 @@
   --secondary-color: rgb(0, 135, 197);
   --teritary-color: #f8f9fa;
 
-  --c1: #062726;
-  --c2: #102b3f;
-  --c3: #6247aa;
-  --c4: #a06cd5;
-  --c5: #f8f8f8;
+  --c1: #1d3557;
+  --c2: #457b9d ;
+  --c3: #a8dadc;
+  --c4: #e63946;
+  --c5: #f1faee;
 }
 
 body {
@@ -25,7 +25,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
   overflow-x: hidden;
-  background-color: var(--c5);
+  background-color: var(--c1);
 }
 
 code {

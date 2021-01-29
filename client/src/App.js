@@ -14,6 +14,7 @@ function App() {
     <div className="App">
       <Router>
         <NavBar />
+        <NavBar vertical={true} />
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route exact path="/experience" component={Experience} />

@@ -74,4 +74,32 @@
     //     bottom: 80%;
     //     background-color: var(--c2);
     // }
+
+    &.vertical{
+        top: 0%;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        top: 50%;
+        transform: translateY(-50%);
+        height: fit-content;
+        width: fit-content;
+        border: 1px solid yellow;
+        border-radius: 10px;
+
+        .nav-link{
+            &.name-logo{
+                display: none;
+            }
+
+            &:last-child{
+                margin-right: 0px;
+            }
+
+            a{
+                color: var(--c1);
+            }
+        }
+    }
 }

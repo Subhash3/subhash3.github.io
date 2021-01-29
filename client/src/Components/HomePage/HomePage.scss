@@ -11,16 +11,34 @@
     .logo{
         font-size: 150px;
         display: inline-block;
+        color: var(--c3);
         // transform: rotateZ(-11deg) rotateX(10deg);
     }
 
     .personal-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        // border: 1px solid red;
+
+        div{
+            margin: 15px 0;
+        }
 
         .name{
             font-size: 25px;
 
             span{
-                color: var(--secondary-color);
+                color: var(--c3);
+            }
+        }
+
+        .social-links{
+            display: flex;
+
+            div{
+                margin: 0 5px;
             }
         }
     }

@@ -1,3 +1,5 @@
+@import '../../Utils/css/keyframes.scss';
+
 .home-page{
     position: relative;
     width: 100%;
@@ -18,7 +20,7 @@
         background-color:  var(--c2_1);
 
         .logo{
-            --size: 280px;
+            --size: 230px;
             position: relative;
             width: var(--size);
             height: var(--size);
@@ -84,7 +86,7 @@
             span{
                 display: inline-block;
                 // color: var(--c5);
-                // animation: shake 300ms ease-in-out 1 alternate;
+                // animation: stumble 300ms ease-in-out 1 alternate;
                 
                 &.capital{
                     font-size: 30px;
@@ -93,7 +95,7 @@
 
                 &:hover{
                     animation-delay: 0 !important;
-                    animation: shake 300ms ease-in-out 1 alternate;
+                    animation: stumble 300ms ease-in-out 1 alternate;
                 }
             }
         }
@@ -112,31 +114,12 @@
                     width: var(--size);
                     height: var(--size);
                     fill: var(--c1);
+
+                    &:hover{
+                        animation: stumble 300ms ease-in-out 1 alternate;
+                    }
                 }
             }
         }
     }
 }
-
-
-@keyframes shake {
-    0%{
-        transform: rotateZ(-10deg) translateY(-8px);
-    }
-
-    25%{
-        transform: rotateZ(0deg) translateY(-3px);
-    }
-
-    50%{
-        transform: rotateZ(20deg) translateY(0px);
-    }
-
-    75%{
-        transform: rotateZ(10deg) translateY(-3px);
-    }
-
-    100%{
-        transform: rotateZ(0deg) translateY(0px);
-    }
-  }

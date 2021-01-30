@@ -1,0 +1,21 @@
+@keyframes stumble {
+    0%{
+        transform: rotateZ(-10deg) translateY(-8px);
+    }
+
+    25%{
+        transform: rotateZ(0deg) translateY(-3px);
+    }
+
+    50%{
+        transform: rotateZ(20deg) translateY(0px);
+    }
+
+    75%{
+        transform: rotateZ(10deg) translateY(-3px);
+    }
+
+    100%{
+        transform: rotateZ(0deg) translateY(0px);
+    }
+}

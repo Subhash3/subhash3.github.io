@@ -4,29 +4,37 @@ import GavelIcon from '@material-ui/icons/Gavel';
 import PersonIcon from '@material-ui/icons/Person';
 import PhoneIcon from '@material-ui/icons/Phone';
 
+export const navItemTypes = {
+    HOME: 'Home',
+    PROJECTS: 'Projects',
+    EXPERIENCE: 'Experience',
+    ABOUT: 'About',
+    GET_IN_TOUCH: 'Get In Touch',
+}
+
 export const navItems = [
     {
-        text: 'Home',
+        text: navItemTypes.HOME,
         className: 'home',
         linkTo: '/',
         icon: HomeIcon,
     }, {
-        text: 'Projects',
+        text: navItemTypes.PROJECTS,
         className: 'projects',
         linkTo: '/projects',
         icon: AccountTreeIcon,
     }, {
-        text: 'Experience',
+        text: navItemTypes.EXPERIENCE,
         className: 'experience',
         linkTo: '/experience',
         icon: GavelIcon,
     }, {
-        text: 'About',
+        text: navItemTypes.ABOUT,
         className: 'about',
         linkTo: '/about',
         icon: PersonIcon,
     }, {
-        text: 'Get In Touch',
+        text: navItemTypes.GET_IN_TOUCH,
         className: 'contact',
         linkTo: '/contact',
         icon: PhoneIcon,

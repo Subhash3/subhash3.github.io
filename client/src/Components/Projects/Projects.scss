@@ -33,19 +33,19 @@
         box-shadow: -1px -1px 6px white,
                     1px 1px 6px var(--c2);
 
-        &::before{
-            position: absolute;
-            content: '';
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 98%;
-            height: 96%;
-            // border: 1px solid red;
-            border-radius: inherit;
-            box-shadow: inset -1px -1px 6px white,
-                        inset 1px 1px 6px var(--c2);
-        }
+        // &::before{
+        //     position: absolute;
+        //     content: '';
+        //     top: 50%;
+        //     left: 50%;
+        //     transform: translate(-50%, -50%);
+        //     width: 99%;
+        //     height: 98%;
+        //     // border: 1px solid red;
+        //     border-radius: inherit;
+        //     box-shadow: inset -1px -1px 6px white,
+        //                 inset 1px 1px 6px var(--c2);
+        // }
 
         .project-card{
             width: calc( 85% / 3 );

@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../Images/logo.jpeg'
+import logo from '../../Images/logo2.jpeg'
 
 import './Projects.min.css'
 
@@ -41,6 +41,10 @@ const Project = ({ project }) => {
             </div>
             <div className="title">{title}</div>
             <div className="info">{info}</div>
+            <div className="buttons">
+                <button className="visit-project">Vist Project</button>
+                <button className="visit-repo">Visit Repo</button>
+            </div>
         </div>
     );
 }

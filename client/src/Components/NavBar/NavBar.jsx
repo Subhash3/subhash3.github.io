@@ -1,47 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import HomeIcon from '@material-ui/icons/Home';
-import AccountTreeIcon from '@material-ui/icons/AccountTree';
-import GavelIcon from '@material-ui/icons/Gavel';
-import PersonIcon from '@material-ui/icons/Person';
-import PhoneIcon from '@material-ui/icons/Phone';
+import { navItems } from './navItems.js'
 
 import './NavBar.min.css'
 
 const NavBar = ({ vertical }) => {
-    const navItems = [
-        {
-            text: 'Home',
-            className: 'home',
-            linkTo: '/',
-            icon: HomeIcon,
-            iconDisplay: vertical
-        }, {
-            text: 'Projects',
-            className: 'projects',
-            linkTo: '/projects',
-            icon: AccountTreeIcon,
-            iconDisplay: vertical
-        }, {
-            text: 'Experience',
-            className: 'experience',
-            linkTo: '/experience',
-            icon: GavelIcon,
-            iconDisplay: vertical
-        }, {
-            text: 'About',
-            className: 'about',
-            linkTo: '/about',
-            icon: PersonIcon,
-            iconDisplay: vertical
-        }, {
-            text: 'Get In Touch',
-            className: 'contact',
-            linkTo: '/contact',
-            icon: PhoneIcon,
-            iconDisplay: vertical
-        },
-    ]
 
     return (
         <div className={`nav-bar ${vertical ? 'vertical' : ''}`}>
@@ -57,7 +20,7 @@ const NavBar = ({ vertical }) => {
                     linkTo={item.linkTo}
                     className={item.className}
                     Icon={item.icon}
-                    iconDisplay={item.iconDisplay}
+                    iconDisplay={vertical}
                 />
             })}
         </div>

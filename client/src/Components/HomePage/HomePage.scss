@@ -46,7 +46,7 @@
         }
     }
 
-    .personal-info{
+    .left-card{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -71,6 +71,8 @@
 
         .sub-title{
             color: var(--c1);
+            // background: linear-gradient(to right, var(--c2_1), var(--c2), var(--c2_1));
+            // background-clip: text;
         }
 
         .name{

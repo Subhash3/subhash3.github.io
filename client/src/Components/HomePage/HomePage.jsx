@@ -21,7 +21,7 @@ const HomePage = () => {
 
     return (
         <div className="home-page">
-            <div className="personal-info">
+            <div className="left-card personal-info">
                 <div className="name">
                     {separateLettersOfName("Subhash Sarangi").map(letterElement => letterElement)}
                 </div>

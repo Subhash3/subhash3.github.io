@@ -82,6 +82,15 @@
             white-space: pre;
             display: flex;
             flex-direction:row;
+            transform: translateX(-200px);
+            opacity: 0.1;
+            transition: transform 500ms cubic-bezier(1,.16,.12,1.7),
+                        opacity 400ms ease-in-out;
+
+            &.page-loaded{
+                transform: translateX(0);
+                opacity: 1;
+            }
 
             span{
                 display: inline-block;

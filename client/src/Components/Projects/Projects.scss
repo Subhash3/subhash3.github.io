@@ -22,11 +22,12 @@
 
     .projects-grid{
         position: relative;
-        display: grid;
-        place-items: center;
+        display: flex;
+        align-items: center;
+        padding: 20px;
         background-color: var(--c3);
-        width: 70%;
-        height: 80%;
+        width: 65%;
+        height: 70%;
         // border: 1px solid red;
         border-radius: 10px;
         box-shadow: -1px -1px 6px white,
@@ -35,6 +36,9 @@
         &::before{
             position: absolute;
             content: '';
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             width: 98%;
             height: 96%;
             // border: 1px solid red;
@@ -44,9 +48,21 @@
         }
 
         .project-card{
-            width: 200px;
-            height: 270px;
-            border: 1px solid red;
+            width: calc( 90% / 3 );
+            height: 90%;
+            padding: 1px;
+            margin: 0 15px;
+            // border: 1px solid red;
+            display: flex;
+            flex-direction: column;
+            box-shadow: -1px -1px 6px rgb(232, 232, 232), 
+                        1px 1px 3px var(--c2_1),;
+
+            .thumbnail{
+                // border: 1px solid red;
+                height: 45%;
+                // background-image: url('../../Images/logo.jpeg')
+            }
         }
     }
 }

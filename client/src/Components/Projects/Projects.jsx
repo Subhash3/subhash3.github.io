@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../../Images/logo.jpeg'
 
 import './Projects.min.css'
 
@@ -35,8 +36,10 @@ const Project = ({ project }) => {
 
     return (
         <div className="project-card">
+            <div className="thumbnail">
+                <img src={logo} alt={title} />
+            </div>
             <div className="title">{title}</div>
-            <div className="thumbnail">Photo</div>
             <div className="info">{info}</div>
         </div>
     );

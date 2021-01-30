@@ -20,7 +20,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
   overflow-x: hidden;
-  background-color: #0baa85;
+  background-color: var(--c2_1);
 }
 
 code {

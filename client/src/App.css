@@ -1,6 +1,8 @@
 .App {
+  position: relative;
   text-align: center;
   font-family: 'Cascadia Code', 'Monospace';
+  min-height: 100vh;
 }
 
 .App-logo {

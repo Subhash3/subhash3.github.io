@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import { navItems } from './navItems.js'
 
 import './NavBar.min.css'
@@ -9,9 +9,9 @@ const NavBar = ({ vertical }) => {
     return (
         <div className={`nav-bar ${vertical ? 'vertical' : ''}`}>
             <div className="nav-link name-logo">
-                <Link to="/">
+                <NavLink to="/">
                     <span className="fname">Subhash</span> Sarangi
-                </Link>
+                </NavLink>
             </div>
             {navItems.map((item, index) => {
                 return <NavItem
@@ -30,8 +30,8 @@ const NavBar = ({ vertical }) => {
 const NavItem = ({ text, linkTo, className, Icon, iconDisplay }) => {
     return (
         <div className={`nav-link ${className}`}>
-            {iconDisplay ? <Link to={linkTo}><Icon /></Link> : null}
-            <Link to={linkTo}>{text}</Link>
+            {iconDisplay ? <NavLink to={linkTo}><Icon /></NavLink> : null}
+            <NavLink to={linkTo} exact activeClassName='active'>{text}</NavLink>
         </div>
     )
 }

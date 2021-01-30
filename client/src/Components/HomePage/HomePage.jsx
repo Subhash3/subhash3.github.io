@@ -8,21 +8,11 @@ import { separateLettersOfName } from '../../Utils/helpers'
 import './HomePage.min.css'
 
 const HomePage = () => {
-    const [pageLoaded, setPageLoaded] = useState(false);
-
-    useEffect(() => {
-        window.addEventListener('load', () => {
-            setPageLoaded(true);
-        })
-        return () => {
-            // cleanUp()
-        }
-    }, []);
 
     return (
         <div className="home-page">
             <div className="left-card personal-info">
-                <div className={`name ${pageLoaded ? 'page-loaded' : ''}`}>
+                <div className={`name`}>
                     {/* {separateLettersOfName("Subhash Sarangi").map(letterElement => letterElement)} */}
                     {separateLettersOfName("Subhash Sarangi")}
                 </div>

@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram'
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import { separateLettersOfName } from '../../Utils/helpers'
-import { Zoom, Fade, Flip, Roll, Rotate, Bounce, Slide } from 'react-reveal'
+import Fade from 'react-reveal/Fade'
+import Slide from 'react-reveal/Slide'
 import HeadShake from 'react-reveal/HeadShake'
 import Jump from 'react-reveal/Jump'
 
@@ -15,12 +16,12 @@ const HomePage = () => {
     return (
         <div className="home-page">
             <div className="left-card personal-info">
-                <SlideAndFade>
+                <Slide left><Fade>
                     <div className={`name`}>
                         {/* {separateLettersOfName("Subhash Sarangi").map(letterElement => letterElement)} */}
                         {separateLettersOfName("Subhash Sarangi")}
                     </div>
-                </SlideAndFade>
+                </Fade></Slide>
                 <div className="sub-title">Full Stack Developer | Deep Learning Enthusiast</div>
                 <Jump>
                     <div className="social-links">
@@ -40,7 +41,5 @@ const HomePage = () => {
         </div>
     );
 }
-
-const SlideAndFade = ({ children }) => <Slide left><Fade>{children}</Fade></Slide>
 
 export default HomePage;

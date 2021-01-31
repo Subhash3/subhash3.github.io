@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../../Images/logo2.jpeg'
+import { Store } from '../../Redux/Store'
 
 import './Projects.min.css'
 
@@ -20,6 +21,9 @@ const projects = [
 ]
 
 const Projects = () => {
+    Store.subscribe(() => {
+        console.log("In Projects")
+    })
     return (
         <div class="projects-container">
             <div className="projects-grid">

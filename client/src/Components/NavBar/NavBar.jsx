@@ -1,10 +1,12 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom'
 import { navItems } from './navItems.js'
+import { Store } from '../../Redux/Store'
 
 import './NavBar.min.css'
 
 const NavBar = ({ vertical }) => {
+    Store.dispatch({ type: 'hihi', payload: {} })
 
     return (
         <div className={`nav-bar ${vertical ? 'vertical' : ''}`}>

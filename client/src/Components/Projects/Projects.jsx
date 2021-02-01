@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../../Images/logo2.jpeg'
 import { Store } from '../../Redux/Store'
+import { separateLettersOfName } from '../../Utils/helpers'
 
 import './Projects.min.css'
 
@@ -17,6 +18,18 @@ const projects = [
         title: "Project3",
         imageUrl: '',
         info: "information"
+    }, {
+        title: "Project3",
+        imageUrl: '',
+        info: "information"
+    }, {
+        title: "Project3",
+        imageUrl: '',
+        info: "information"
+    }, {
+        title: "Project3",
+        imageUrl: '',
+        info: "information"
     },
 ]
 
@@ -26,6 +39,9 @@ const Projects = () => {
     })
     return (
         <div class="projects-container">
+            <div className="header">
+                {separateLettersOfName("My Projects")}
+            </div>
             <div className="projects-grid">
                 {projects.map((project, index) => {
                     return <Project key={index} project={project} />
@@ -46,8 +62,9 @@ const Project = ({ project }) => {
             <div className="title">{title}</div>
             <div className="info">{info}</div>
             <div className="buttons">
-                <button className="visit-project">Vist Project</button>
-                <button className="visit-repo">Visit Repo</button>
+                {/* <button className="visit-project">Vist Project</button>
+                <button className="visit-repo">Visit Repo</button> */}
+                <button className="read-more">Read More</button>
             </div>
         </div>
     );

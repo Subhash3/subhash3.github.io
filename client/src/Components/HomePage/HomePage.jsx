@@ -32,7 +32,7 @@ const HomePage = () => {
                     </div>
                 </Jump>
                 <HeadShake delay={500}>
-                    <div className="connect-btn">Connect</div>
+                    <div className="connect-btn">Hire Me!</div>
                 </HeadShake>
             </div>
             <div className="right-card">

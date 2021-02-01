@@ -6,11 +6,18 @@ export const initialState = {
     notNice: false
 }
 
-export const Store = createStore(
-    sampleReducer,
-    initialState,
+export let Store
 
-    process.env.NODE_ENV !== 'production' ?
+if (process.env.NODE_ENV === 'production') {
+    Store = createStore(
+        sampleReducer,
+        initialState
+    )
+} else {
+    Store = createStore(
+        sampleReducer,
+        initialState,
         // development purpose! This lets us inspect the redux state in the redux devtools browser extension
-        window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__() : null
-)
+        window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+    )
+}

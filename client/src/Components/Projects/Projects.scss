@@ -24,6 +24,7 @@
 
     .header{
         margin: 10% auto;
+        margin-bottom: 5%;
         font-family: 'Cascadia Code', 'Monospace', 'serif';
         font-size: 28px;
         color: var(--c3);
@@ -43,39 +44,25 @@
     }
 
     .projects-grid{
+        $cardWidth: 230px;
+        $cardHeight: 290px;
+        $gridGap: 20px;
+
         position: relative;
         display: grid;
-        
-        // align-items: center;
+        grid-template-columns: repeat(3, $cardWidth + $gridGap);
+        align-items: center;
+        justify-content: center;
+        grid-gap: 20px;
         padding: 20px;
         width: 75%;
         height: auto;
-        // // border: 1px solid red;
-        // background-color: var(--c3);
-        // border-radius: 10px;
-        // box-shadow: -1px -1px 6px white,
-        //             1px 1px 6px var(--c2);
-
-        // &::before{
-        //     position: absolute;
-        //     content: '';
-        //     top: 50%;
-        //     left: 50%;
-        //     transform: translate(-50%, -50%);
-        //     width: 99%;
-        //     height: 98%;
-        //     // border: 1px solid red;
-        //     border-radius: inherit;
-        //     box-shadow: inset -1px -1px 6px white,
-        //                 inset 1px 1px 6px var(--c2);
-        // }
 
         .project-card{
-            width: 230px;
-            height: 290px;
             padding: 10px;
             margin: 0 auto;
             // border: 1px solid red;
+            background-color: var(--c3);
             display: flex;
             flex-direction: column;
             box-shadow: -1px -1px 6px rgb(232, 232, 232), 
@@ -104,6 +91,7 @@
 
             .info{
                 height: 100px;
+                margin-bottom: 5px;
             }
 
             .buttons{

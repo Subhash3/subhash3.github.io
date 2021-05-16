@@ -1,5 +1,4 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Provider } from 'react-redux'
 import { Store } from './Redux/Store'
 
@@ -16,17 +15,13 @@ function App() {
   return (
     <Provider store={Store}>
       <div className="App">
-        <Router>
-          <NavBar />
-          <NavBar vertical={true} />
-          <Switch>
-            <Route exact path="/" component={HomePage} />
-            <Route exact path="/experience" component={Experience} />
-            <Route exact path="/contact" component={GetInTouch} />
-            <Route exact path="/projects" component={Projects} />
-            <Route exact path="/about" component={AboutMe} />
-          </Switch>
-        </Router>
+        <NavBar />
+        <NavBar vertical={true} />
+        <HomePage />
+        <Projects />
+        <Experience />
+        <GetInTouch />
+        <AboutMe />
       </div>
     </Provider>
   );

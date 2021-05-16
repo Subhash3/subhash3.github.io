@@ -1,5 +1,4 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom'
 import { navItems } from './navItems.js'
 import { Store } from '../../Redux/Store'
 
@@ -11,9 +10,9 @@ const NavBar = ({ vertical }) => {
     return (
         <div className={`nav-bar ${vertical ? 'vertical' : ''}`}>
             <div className="nav-link name-logo">
-                <NavLink to="/">
+                <a href="/">
                     <span className="fname">Subhash</span> Sarangi
-                </NavLink>
+                </a>
             </div>
             {navItems.map((item, index) => {
                 return <NavItem
@@ -32,8 +31,8 @@ const NavBar = ({ vertical }) => {
 const NavItem = ({ text, linkTo, className, Icon, iconDisplay }) => {
     return (
         <div className={`nav-link ${className}`}>
-            {iconDisplay ? <NavLink to={linkTo}><Icon /></NavLink> : null}
-            <NavLink to={linkTo} exact activeClassName='active'>{text}</NavLink>
+            {iconDisplay ? <a href={linkTo}><Icon /></a> : null}
+            <a href={linkTo} exact activeClassName='active'>{text}</a>
         </div>
     )
 }

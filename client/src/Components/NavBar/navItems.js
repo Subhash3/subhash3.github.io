@@ -21,22 +21,22 @@ export const navItems = [
     }, {
         text: navItemTypes.PROJECTS,
         className: 'projects',
-        linkTo: '/projects',
+        linkTo: '#projects',
         icon: AccountTreeIcon,
     }, {
         text: navItemTypes.EXPERIENCE,
         className: 'experience',
-        linkTo: '/experience',
+        linkTo: '#experience',
         icon: GavelIcon,
     }, {
         text: navItemTypes.ABOUT,
         className: 'about',
-        linkTo: '/about',
+        linkTo: '#about',
         icon: PersonIcon,
     }, {
         text: navItemTypes.GET_IN_TOUCH,
         className: 'contact',
-        linkTo: '/contact',
+        linkTo: '#contact',
         icon: PhoneIcon,
     },
 ]

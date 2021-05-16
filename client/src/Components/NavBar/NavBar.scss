@@ -11,6 +11,9 @@
     z-index: 99;
     // background-color: var(--c2_1);
     // border: 1px solid red;
+    // &:not(.vertical){
+    //     background: linear-gradient(to left, var(--c2_1) 55%, var(--c3) 45%);
+    // }
 
     .nav-link {
         padding: 10px 20px;

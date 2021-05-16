@@ -31,7 +31,10 @@ function App() {
     </Provider>
   );
 }
+
+// Copied from stack-overflow
 if (typeof (String.prototype.trim) === "undefined") {
+  // eslint-disable-next-line no-extend-native
   String.prototype.trim = function () {
     return String(this).replace(/^\s+|\s+$/g, '');
   };

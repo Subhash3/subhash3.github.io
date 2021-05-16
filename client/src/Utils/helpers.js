@@ -8,3 +8,7 @@ export const separateLettersOfName = (name) => {
 
     return lettersArray
 }
+
+export const pickRandomFromArray = (array) => {
+    return array[Math.floor(Math.random() * array.length)];
+}

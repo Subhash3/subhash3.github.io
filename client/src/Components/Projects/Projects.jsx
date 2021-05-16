@@ -22,19 +22,20 @@ const projects = [
         info: `Implemented using MERN stack and socket.io
                I learned about heroku and netlify during this project.`
     }, {
+        title: "Covid19 Predictions API",
+        imageUrl: '',
+        info: `REST API which provides the next 3 weeks' predictions of covid19 cases for several countries.
+               Implemented using NodeJs and Express.`
+    }, {
         title: "Sentiment Analysis",
         imageUrl: '',
         info: `Sentiment Analysis using Naive Bayes Classifier from scratch.
                Classifier model was implemented in both Python and Typescript.`
     }, {
-        title: "Project3",
+        title: "Covid19 Dashboard",
         imageUrl: '',
-        info: "information"
-    }, {
-        title: "Project3",
-        imageUrl: '',
-        info: "information"
-    },
+        info: `Covid19 cases and predictions dashboard for India.`
+    }
 ]
 
 const Projects = () => {

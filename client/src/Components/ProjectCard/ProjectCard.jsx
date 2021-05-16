@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import logo from '../../Images/logo2.jpeg'
+import { separateLettersOfName } from '../../Utils/helpers'
+
 import './ProjectCard.min.css'
 
 const Project = ({ project }) => {
@@ -10,13 +12,20 @@ const Project = ({ project }) => {
         setInfoRevealed(!infoRevealed)
     }
 
+    const getLines = (string) => {
+        let lines = string.split('\n')
+        return lines.map(line => line.trim())
+    }
+
     return (
         <div className={`project-card  ${infoRevealed ? 'revealed' : ''}`}>
             <div className="thumbnail">
                 <img src={logo} alt={title} />
             </div>
-            <div className="title">{title}</div>
-            <div className={`info`}>{info}</div>
+            <div className="title">{separateLettersOfName(title)}</div>
+            <ul className={`info`}>
+                {getLines(info).map((line, index) => <li key={index}>{line}</li>)}
+            </ul>
             <div className="buttons">
                 {/* <button className="visit-project">Vist Project</button>
                 <button className="visit-repo">Visit Repo</button> */}

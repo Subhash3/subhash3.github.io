@@ -7,21 +7,25 @@ import './Projects.min.css'
 
 const projects = [
     {
-        title: "Project-1",
+        title: "Feed Forward Neural Networks",
         imageUrl: '',
-        info: "information"
+        info: `Fully functional feed forward neural networks library from scratch.
+               Implemented in python3.6.`
     }, {
-        title: "Project-2",
+        title: "Handwritten Digits Recognition",
         imageUrl: '',
-        info: "information"
+        info: `Neural Network which can classify handwritten digits using MNIST dataset from scratch.
+               Implemented using the ffnn library that I made.`
     }, {
-        title: "Project3",
+        title: "Real-Time Chat application",
         imageUrl: '',
-        info: "information"
+        info: `Implemented using MERN stack and socket.io
+               I learned about heroku and netlify during this project.`
     }, {
-        title: "Project3",
+        title: "Sentiment Analysis",
         imageUrl: '',
-        info: "information"
+        info: `Sentiment Analysis using Naive Bayes Classifier from scratch.
+               Classifier model was implemented in both Python and Typescript.`
     }, {
         title: "Project3",
         imageUrl: '',
@@ -38,7 +42,7 @@ const Projects = () => {
         console.log("In Projects")
     })
     return (
-        <div class="projects-container">
+        <div className="projects-container">
             <div className="header">
                 {separateLettersOfName("My Projects")}
             </div>

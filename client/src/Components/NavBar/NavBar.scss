@@ -9,6 +9,7 @@
     justify-content: flex-end;
     font-size: 13px;
     z-index: 99;
+    // background-color: var(--c2_1);
     // border: 1px solid red;
 
     .nav-link {
@@ -20,8 +21,16 @@
         }
 
         &.name-logo{
+            display: grid;
+            place-items: center;
             margin-right: auto;
-            margin-left: 10px;
+            padding-left: 10px;
+            padding-right: 30px;
+            // height: 100%;
+            background-color: var(--c3);
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+            // border: 1px solid red;
 
             a{
                 color: var(--c2);
@@ -82,7 +91,7 @@
         border-radius: 50px;
         border: 1px solid rgb(226, 225, 225);
         padding: 0px;
-        // background-color: var(--c3);
+        background-color: unset;
 
         .nav-link{
             position: relative;

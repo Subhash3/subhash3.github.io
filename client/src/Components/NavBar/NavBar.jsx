@@ -14,16 +14,18 @@ const NavBar = ({ vertical }) => {
                     <span className="fname">Subhash</span> Sarangi
                 </a>
             </div>
-            {navItems.map((item, index) => {
-                return <NavItem
-                    key={index}
-                    text={item.text}
-                    linkTo={item.linkTo}
-                    className={item.className}
-                    Icon={item.icon}
-                    iconDisplay={vertical}
-                />
-            })}
+            <div className="nav-items">
+                {navItems.map((item, index) => {
+                    return <NavItem
+                        key={index}
+                        text={item.text}
+                        linkTo={item.linkTo}
+                        className={item.className}
+                        Icon={item.icon}
+                        iconDisplay={vertical}
+                    />
+                })}
+            </div>
         </div>
     );
 }

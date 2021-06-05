@@ -13,9 +13,13 @@ import Jump from 'react-reveal/Jump'
 import './HomePage.min.css'
 
 const HomePage = () => {
+    const subtitleArr = ["Full Stack Developer", "Deep Learning Enthusiast"]
 
     return (
         <div className="home-page">
+            <div className="right-card">
+                <div className="logo">SS</div>
+            </div>
             <div className="left-card personal-info">
                 <Slide left><Fade>
                     <div className={`name`}>
@@ -23,7 +27,14 @@ const HomePage = () => {
                         {separateLettersOfName("Subhash Sarangi")}
                     </div>
                 </Fade></Slide>
-                <div className="sub-title">Full Stack Developer | Deep Learning Enthusiast</div>
+                <div className="sub-title">
+                    {subtitleArr.map((st, index) => {
+                        if (index === subtitleArr.length - 1) {
+                            return <span>{st}</span>
+                        }
+                        return <span>{st} | </span>
+                    })}
+                </div>
                 <Jump>
                     <div className="social-links">
                         <a href="https://github.com/Subhash3" className="github" target="_blank" rel="noopener noreferrer"><GitHubIcon /></a>
@@ -41,9 +52,6 @@ const HomePage = () => {
                         <a href={resume} className="btn" download>Resume</a>
                     </HeadShake>
                 </div>
-            </div>
-            <div className="right-card">
-                <div className="logo">SS</div>
             </div>
         </div>
     );

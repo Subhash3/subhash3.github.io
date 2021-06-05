@@ -68,6 +68,8 @@
             // border: 1px solid red;
 
             .btn{
+                display: block;
+                text-decoration: none;
                 background-color: var(--c2_1);
                 color: var(--c3);
                 padding: 7px 15px;
@@ -122,7 +124,7 @@
             display: flex;
             // border: 1px solid red;
             
-            div{
+            a{
                 margin: 0 5px;
                 // border: 1px solid blue;
                 

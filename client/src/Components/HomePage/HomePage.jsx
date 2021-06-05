@@ -3,7 +3,8 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram'
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import { separateLettersOfName } from '../../Utils/helpers'
+import { separateLettersOfName, } from '../../Utils/helpers'
+import resume from '../../files/resume.pdf'
 import Fade from 'react-reveal/Fade'
 import Slide from 'react-reveal/Slide'
 import HeadShake from 'react-reveal/HeadShake'
@@ -25,18 +26,19 @@ const HomePage = () => {
                 <div className="sub-title">Full Stack Developer | Deep Learning Enthusiast</div>
                 <Jump>
                     <div className="social-links">
-                        <div className="facebook"><FacebookIcon /></div>
-                        <div className="instagram"><InstagramIcon /></div>
-                        <div className="github"><GitHubIcon /></div>
-                        <div className="linkedin"><LinkedInIcon /></div>
+                        <a href="https://github.com/Subhash3" className="github" target="_blank" rel="noopener noreferrer"><GitHubIcon /></a>
+                        <a href="https://linkedin.com/in/subhash-sarangi" className="linkedin" target="_blank" rel="noopener noreferrer"><LinkedInIcon /></a>
+                        <a href="/" className="facebook" target="_blank" rel="noopener noreferrer"><FacebookIcon /></a>
+                        <a href="/" className="instagram" target="_blank" rel="noopener noreferrer"><InstagramIcon /></a>
                     </div>
                 </Jump>
                 <div className="buttons">
-                    <HeadShake delay={500}>
+                    {/* <HeadShake delay={500}>
                         <div className="hire-me btn">Hire Me!</div>
-                    </HeadShake>
+                    </HeadShake> */}
                     <HeadShake delay={600}>
-                        <div className="resume btn">Resume</div>
+                        {/* <div className="resume btn" onClick={openResume}>Resume</div> */}
+                        <a href={resume} className="btn" download>Resume</a>
                     </HeadShake>
                 </div>
             </div>

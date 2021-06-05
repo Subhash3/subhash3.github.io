@@ -12,3 +12,9 @@ export const separateLettersOfName = (name) => {
 export const pickRandomFromArray = (array) => {
     return array[Math.floor(Math.random() * array.length)];
 }
+
+export const openResume = () => {
+    const resumePath = '../files/resume.pdf'
+
+    window.open(resumePath)
+}

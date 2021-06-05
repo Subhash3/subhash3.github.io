@@ -10,10 +10,10 @@ Just trying to create an isolated space for myself to showcase my projects.
 - [x] Image as a placeholder for logo.
 - [x] Projects Component.
 - [x] Add nice little animations to the project cards.
-- [ ] Fix page styling as we are rendering all the components in a single page now!.
+- [x] Fix page styling as we are rendering all the components in a single page now!.
 <!-- - [ ] Make the logo sticky on the top left corner. -->
 - [ ] Make the nav bar sticky on scroll.
-- [ ] Make basic templates for all components.
+- [x] Make basic templates for all components.
 - [x] Prepare a list of major projects inside Projects component.
 - [ ] Make read-more buttons to redirect to respective project repo or live website.
 - [ ] Design a Logo.

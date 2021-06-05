@@ -15,10 +15,10 @@ Just trying to create an isolated space for myself to showcase my projects.
 - [ ] Make the nav bar sticky on scroll.
 - [x] Make basic templates for all components.
 - [x] Prepare a list of major projects inside Projects component.
-- [ ] Make read-more buttons to redirect to respective project repo or live website.
+- [x] Make read-more buttons to redirect to respective project repo or live website.
 - [ ] Design a Logo.
 - [ ] Create thumbnails for my major projects.
-- [ ] Experience Component.
+- [x] Experience Component.
 - [ ] About Me.
 - [ ] Get In Touch.
 

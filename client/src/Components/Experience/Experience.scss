@@ -2,13 +2,12 @@
     width: 80%;
     height: auto;
     min-height: 100vh;
-    padding: 100px;
+    padding: 50px 100px 100px 100px;
     margin: 0 auto;
     box-shadow: 1px 1px 4px var(--c2_1);
     // border: 1px solid red;
 
     .header{
-        // margin-top: 3%;
         font-size: 28px;
         color: var(--c2);
         margin-bottom: 50px;
@@ -34,7 +33,7 @@
         }
 
         .title{
-            font-size: 22px;
+            font-size: 20px;
             font-weight: bold;
             width: fit-content;
             text-transform: capitalize;
@@ -44,10 +43,11 @@
         .place{
             position: relative;
             width: fit-content;
-            text-transform: capitalize;
+            // text-transform: capitalize;
             margin: 0 auto;
-            font-size: 18px;
+            font-size: 16px;
             // border: 1px solid red;
+            color: var(--c1);
 
             &::before{
                 position: absolute;
@@ -57,7 +57,7 @@
                 top: 50%;
                 color: black;
                 transform: translateY(-50%);
-                font-size: 15px;
+                font-size: 13px;
             }
         }
 
@@ -67,6 +67,7 @@
             margin-left: 5px;
             margin-top: 15px;
             margin-bottom:  15px;
+            font-size: 13px;
         }
 
         .date{

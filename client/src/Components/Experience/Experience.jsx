@@ -1,4 +1,7 @@
 import React from 'react';
+import Slide from 'react-reveal/Slide'
+import { pickRandomFromArray } from '../../Utils/helpers'
+import { slideDirections as directions } from '../../Utils/useful-objects'
 
 import './Experience.min.css'
 
@@ -13,7 +16,13 @@ const myWorks = [
         place: "theyoundminds.org",
         date: "13th Sep 2020 to 31st March 2021",
         info: "I worked as a full (Mern) stack developer. During the period, I build a Real-Time Chat Application and Live Streaming platform."
-    },
+    }
+    // , {
+    //     title: "Another Project/Internship",
+    //     place: "Some weird place",
+    //     date: "Donno to Donno",
+    //     info: "I wish I had done some ML internships and projects. But I don't. Pray for me!"
+    // },
 ]
 
 const Experience = () => {
@@ -32,14 +41,26 @@ const Experience = () => {
 const Work = ({ workObject }) => {
     let { title, place, date, info } = workObject
 
+    const pickDirection = () => {
+        let slideDir = { left: false, right: false, up: false, down: false }
+
+        let dir = pickRandomFromArray(directions)
+        slideDir[dir] = true
+
+        return slideDir
+    }
+
+    let slideDir = pickDirection()
 
     return (
-        <div className="work">
-            <div className="title">{title}</div>
-            <div className="place">{place}</div>
-            <div className="date">{date}</div>
-            <div className="info">{info}</div>
-        </div>
+        <Slide left={slideDir.left} right={slideDir.right} down={slideDir.down} up={slideDir.up}>
+            <div className="work">
+                <div className="title">{title}</div>
+                <div className="place">{place}</div>
+                <div className="date">{date}</div>
+                <div className="info">{info}</div>
+            </div>
+        </Slide>
     )
 }
 

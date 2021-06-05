@@ -62,22 +62,30 @@
             margin: 8px 0;
         }
 
-        .connect-btn{
-            background-color: var(--c2_1);
-            color: var(--c3);
-            padding: 7px 15px;
-            border-radius: 3px;
-            box-shadow: 1px 1px 3px var(--c2);
-            cursor: pointer;
-            transition: background-color 200ms ease-in-out,
-                        box-shadow 500ms ease-in-out,
-                        padding 200ms ease-in-out;
+        .buttons{
+            display: flex;
+            padding: 10px 10px;
+            // border: 1px solid red;
 
-            &:hover{
-                background-color: var(--c2);
-                box-shadow: 1px 1px 5px var(c2);
-                padding-left: 20px;
-                padding-right: 20px;
+            .btn{
+                background-color: var(--c2_1);
+                color: var(--c3);
+                padding: 7px 15px;
+                margin: 0 10px;
+                border-radius: 3px;
+                box-shadow: 1px 1px 3px var(--c2);
+                cursor: pointer;
+                transition: background-color 200ms ease-in-out,
+                            box-shadow 500ms ease-in-out,
+                            padding 200ms ease-in-out;
+                // border: 1px solid red;
+                
+                &:hover{
+                    background-color: var(--c2);
+                    box-shadow: 1px 1px 5px var(c2);
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
             }
         }
 

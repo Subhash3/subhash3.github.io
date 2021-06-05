@@ -2,10 +2,9 @@ import React, { useState } from 'react';
 import logo from '../../Images/logo2.jpeg'
 import Slide from 'react-reveal/Slide'
 import { separateLettersOfName, pickRandomFromArray } from '../../Utils/helpers'
+import { slideDirections as directions } from '../../Utils/useful-objects'
 
 import './ProjectCard.min.css'
-
-const directions = ["left", "right", "up", "down"]
 
 const Project = ({ project }) => {
     const [infoRevealed, setInfoRevealed] = useState(false)

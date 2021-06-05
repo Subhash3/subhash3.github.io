@@ -31,9 +31,14 @@ const HomePage = () => {
                         <div className="linkedin"><LinkedInIcon /></div>
                     </div>
                 </Jump>
-                <HeadShake delay={500}>
-                    <div className="connect-btn">Hire Me!</div>
-                </HeadShake>
+                <div className="buttons">
+                    <HeadShake delay={500}>
+                        <div className="hire-me btn">Hire Me!</div>
+                    </HeadShake>
+                    <HeadShake delay={600}>
+                        <div className="resume btn">Resume</div>
+                    </HeadShake>
+                </div>
             </div>
             <div className="right-card">
                 <div className="logo">SS</div>

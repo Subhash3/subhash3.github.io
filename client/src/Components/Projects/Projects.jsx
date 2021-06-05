@@ -10,32 +10,37 @@ const projects = [
         title: "Feed Forward Neural Networks",
         imageUrl: '',
         info: `Fully functional feed forward neural networks library from scratch.
-               Implemented in python3.6.`
+               Implemented in python3.`,
+        url: "https://pypi.org/project/nicenet/"
     }, {
         title: "Handwritten Digits Recognition",
         imageUrl: '',
-        info: `Neural Network which can classify handwritten digits using MNIST dataset from scratch.
-               Implemented using the ffnn library that I made.`
+        info: `Neural Network which can classify handwritten digits using MNIST dataset from scratch.`,
+        url: "https://github.com/Subhash3/Handwritten-digit-recognition"
     }, {
         title: "Real-Time Chat application",
         imageUrl: '',
         info: `Implemented using MERN stack and socket.io
-               I learned about heroku and netlify during this project.`
-    }, {
-        title: "Covid19 Predictions API",
-        imageUrl: '',
-        info: `REST API which provides the next 3 weeks' predictions of covid19 cases for several countries.
-               Implemented using NodeJs and Express.`
+               I learned about heroku and netlify during this project.`,
+        url: "https://github.com/Subhash3/chat-app"
     }, {
         title: "Sentiment Analysis",
         imageUrl: '',
         info: `Sentiment Analysis using Naive Bayes Classifier from scratch.
-               Classifier model was implemented in both Python and Typescript.`
+               Classifier model was implemented in both Python and Typescript.`,
+        url: "https://github.com/Subhash3/Sentiment-Analysis"
     }, {
-        title: "Covid19 Dashboard",
+        title: "Covid19 Predictions API",
         imageUrl: '',
-        info: `Covid19 cases and predictions dashboard for India.`
-    }
+        info: `REST API which provides the next 3 weeks' predictions of covid19 cases for several countries.
+               Implemented using NodeJs and Express.`,
+        url: "http://152.67.162.241:3000"
+    }, {
+        title: "Pima Diabetes Classifier",
+        imageUrl: '',
+        info: `Classification of Pima Indian Diabetes dataset using neural networks. `,
+        url: "https://github.com/Subhash3/Pima-Indians-Diabetes"
+    },
 ]
 
 const Projects = () => {

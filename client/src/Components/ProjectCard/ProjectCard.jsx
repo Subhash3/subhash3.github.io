@@ -44,10 +44,11 @@ const Project = ({ project }) => {
             <div className="buttons">
                 {/* <button className="visit-project">Vist Project</button>
                 <button className="visit-repo">Visit Repo</button> */}
-                <button
+                <a
                     className="read-more"
+                    href={project.url}
                     onClick={toggleInfo}
-                >Read More</button>
+                >Read More</a>
             </div>
         </div>
     );

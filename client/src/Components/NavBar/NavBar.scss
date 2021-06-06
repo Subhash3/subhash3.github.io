@@ -204,3 +204,13 @@
         }
     }
 }
+
+@media screen and (max-width: 500px){
+    .nav-bar{
+    
+        &.vertical{
+            display: none;
+            // border: 1px solid red;
+        }
+    }
+}

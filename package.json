@@ -4,7 +4,7 @@
   "description": "My portfolio",
   "main": "index.js",
   "scripts": {
-    "predeploy": "cd client && npm run build",
+    "predeploy": "cd client && rm -rf build/ && npm run build",
     "deploy": "gh-pages -d client/build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

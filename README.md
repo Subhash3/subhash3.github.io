@@ -24,8 +24,8 @@ Just trying to create an isolated space for myself to showcase my projects.
 - [ ] Responsiveness
     - [x] Navbar
     - [x] Homepage
-    - [ ] Projects
-    - [ ] Experience
+    - [x] Projects
+    - [x] Experience
     - [ ] About Me
     - [ ] Get in touch
 

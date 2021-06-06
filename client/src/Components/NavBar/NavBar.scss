@@ -15,6 +15,39 @@
     //     background: linear-gradient(to left, var(--c2_1) 55%, var(--c3) 45%);
     // }
 
+    &:not(&.vertical) .ham-burger{
+        position: fixed;
+        flex-direction: column;
+        justify-content: center;
+        top: 5px;
+        right: 10px;
+        width: 35px;
+        height: 35px;
+        background-color: var(--c3);
+        cursor: pointer;
+        display: none;
+
+        .line{
+            width: 80%;
+            height: 2px;
+            border-radius: 2px;
+            background-color: var(--c2);
+            margin: 2px auto;
+            transition: width 250ms ease-in-out;
+
+            &:nth-child(1){
+                width: 70%;
+            }
+            &:nth-child(3){
+                width: 60%;
+            }
+        }
+
+        &:hover .line{
+            width: 80%;
+        }
+    }
+
     .nav-items{
         display: flex;
     }
@@ -207,6 +240,17 @@
 
 @media screen and (max-width: 500px){
     .nav-bar{
+        height: 100vh;
+        background-color: var(--c2_1);
+        justify-content: flex-start;
+        
+        &:not(&.vertical) .ham-burger{
+            display: flex;
+        }
+
+        .nav-items{
+            flex-direction: column;
+        }
     
         &.vertical{
             display: none;

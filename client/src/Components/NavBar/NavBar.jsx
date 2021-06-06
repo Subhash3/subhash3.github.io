@@ -9,6 +9,11 @@ const NavBar = ({ vertical }) => {
 
     return (
         <div className={`nav-bar ${vertical ? 'vertical' : ''}`}>
+            <div className="ham-burger">
+                <div className="line line1"></div>
+                <div className="line line2"></div>
+                <div className="line line3"></div>
+            </div>
             <div className="nav-link name-logo">
                 <a href="/">
                     <span className="fname">Subhash</span> Sarangi

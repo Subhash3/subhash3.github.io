@@ -78,13 +78,14 @@
     }
 
     .projects-grid{
-        $cardWidth: 250px;
-        $cardHeight: 290px;
-        $gridGap: 20px;
+        --cardWidth: 250px;
+        --cardHeight: 450px;
+        --gridGap: 20px;
 
         position: relative;
         display: grid;
-        grid-template-columns: repeat(3, $cardWidth + $gridGap);
+        grid-template-columns: repeat(3, calc( var(--cardWidth) + var(--gridGap) ));
+        grid-template-rows: repeat(2, calc( var(--cardHeight) + var(--gridGap) ));
         align-items: center;
         justify-content: center;
         grid-gap: 20px;

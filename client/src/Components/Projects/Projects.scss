@@ -81,16 +81,54 @@
         --cardWidth: 250px;
         --cardHeight: 450px;
         --gridGap: 20px;
+        --cols: 3;
+        --rows: 2;
 
         position: relative;
         display: grid;
-        grid-template-columns: repeat(3, calc( var(--cardWidth) + var(--gridGap) ));
-        grid-template-rows: repeat(2, calc( var(--cardHeight) + var(--gridGap) ));
+        grid-template-columns: repeat(var(--cols), calc( var(--cardWidth) + var(--gridGap) ));
+        grid-template-rows: repeat(var(--rows), calc( var(--cardHeight) + var(--gridGap) ));
         align-items: center;
         justify-content: center;
         grid-gap: 20px;
         padding: 20px;
         width: 75%;
         height: auto;
+    }
+}
+
+@media screen and (max-width: 1200px){   
+    .projects-container{
+
+        .projects-grid{
+            --cols: 2;
+            --gridGap: 10px;
+            border: 3px solid red;
+        }
+    }
+}
+
+@media screen and (max-width: 760px){   
+    .projects-container{
+        
+        .projects-grid{
+            --gridGap: 5px;
+            width: 100%;
+            justify-content: end;
+            border: 3px solid red;
+        }
+    }
+}
+
+@media screen and (max-width: 630px){   
+    .projects-container{
+        
+        .projects-grid{
+            --gridGap: 5px;
+            --cols: 1;
+            width: 100%;
+            justify-content: center;
+            border: 3px solid red;
+        }
     }
 }

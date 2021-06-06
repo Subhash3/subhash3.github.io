@@ -9,8 +9,8 @@
     justify-content: flex-end;
     font-size: 13px;
     z-index: 99;
-    // background-color: var(--c2_1);
     // border: 1px solid red;
+    // background-color: var(--c2_1);
     // &:not(.vertical){
     //     background: linear-gradient(to left, var(--c2_1) 55%, var(--c3) 45%);
     // }
@@ -50,6 +50,8 @@
 
     .nav-items{
         display: flex;
+        // border: 1px solid blue;
+        z-index: inherit;
     }
 
     .nav-link {
@@ -76,6 +78,7 @@
                 color: var(--c2);
                 font-size: 20px;
                 font-weight: bold;
+                // border: 1px solid red;
 
                 .fname{
                     color: var(--c1);
@@ -210,6 +213,10 @@
 
 @media screen and (max-width: 1000px){
     .nav-bar{
+        &:not(.vertical){
+            position: relative;
+        }
+
         .nav-link{
             a{
                 --color: var(--c1);
@@ -243,15 +250,35 @@
         height: 100vh;
         background-color: var(--c2_1);
         justify-content: flex-start;
+        // border: 10px solid red;
+        // transform: translateY(-100%);
         
+        &:not(.vertical){
+            position: fixed;
+            margin-top: 0px;
+
+            .name-logo{
+                width: 100%;
+                background-color: var(--c3);
+                // border: 1px solid red;
+            }
+        }
+        
+        .nav-items{
+            flex-direction: column;
+            padding-top: 20%;
+
+            a{
+                // border: 1px solid red;
+                font-size: 15px;
+                color: var(--c3);
+            }
+        }
+
         &:not(&.vertical) .ham-burger{
             display: flex;
         }
 
-        .nav-items{
-            flex-direction: column;
-        }
-    
         &.vertical{
             display: none;
             // border: 1px solid red;

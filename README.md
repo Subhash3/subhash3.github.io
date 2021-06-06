@@ -21,6 +21,13 @@ Just trying to create an isolated space for myself to showcase my projects.
 - [x] Experience Component.
 - [ ] About Me.
 - [ ] Get In Touch.
+- [ ] Responsiveness
+    - [x] Navbar
+    - [x] Homepage
+    - [ ] Projects
+    - [ ] Experience
+    - [ ] About Me
+    - [ ] Get in touch
 
 ##### Backend
 - [ ] Setup node-mailer for contact facility.

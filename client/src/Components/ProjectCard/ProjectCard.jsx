@@ -33,7 +33,7 @@ const Project = ({ project }) => {
     return (
         <div className={`project-card  ${infoRevealed ? 'revealed' : ''}`}>
             <div className="thumbnail">
-                <img src={logo} alt={title} />
+                <img src={project.imageUrl ? project.imageUrl : logo} alt={title} />
             </div>
             <Slide left={slideDir.left} right={slideDir.right} down={slideDir.down} up={slideDir.up} >
                 <div className="title">{separateLettersOfName(title)}</div>

@@ -3,6 +3,9 @@ import { Store } from '../../Redux/Store'
 import { separateLettersOfName } from '../../Utils/helpers'
 import ProjectCard from '../ProjectCard/ProjectCard'
 
+import neuralNetworkImage from '../../Images/neural-network.jpg'
+import handwrittenDigitsImage from '../../Images/neural-network.jpg'
+
 import './Projects.min.css'
 
 const projects = [
@@ -11,12 +14,12 @@ const projects = [
         imageUrl: '',
         info: `Fully functional feed forward neural networks library from scratch.
                Implemented in python3.`,
-        url: "https://pypi.org/project/nicenet/"
+        url: neuralNetworkImage
     }, {
         title: "Handwritten Digits Recognition",
         imageUrl: '',
         info: `Neural Network which can classify handwritten digits using MNIST dataset from scratch.`,
-        url: "https://github.com/Subhash3/Handwritten-digit-recognition"
+        url: handwrittenDigitsImage
     }, {
         title: "Real-Time Chat application",
         imageUrl: '',

@@ -30,9 +30,9 @@ const HomePage = () => {
                 <div className="sub-title">
                     {subtitleArr.map((st, index) => {
                         if (index === subtitleArr.length - 1) {
-                            return <span>{st}</span>
+                            return <span key={index}>{st}</span>
                         }
-                        return <span>{st} | </span>
+                        return <span key={index}>{st} | </span>
                     })}
                 </div>
                 <Jump>

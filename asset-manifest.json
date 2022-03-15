@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.7654f3b7.chunk.css",
-    "main.js": "/static/js/main.bf2122c2.chunk.js",
-    "main.js.map": "/static/js/main.bf2122c2.chunk.js.map",
+    "main.css": "/static/css/main.0ec8199e.chunk.css",
+    "main.js": "/static/js/main.0493fb46.chunk.js",
+    "main.js.map": "/static/js/main.0493fb46.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.a06e69b5.js",
     "runtime-main.js.map": "/static/js/runtime-main.a06e69b5.js.map",
-    "static/js/2.7f32f29f.chunk.js": "/static/js/2.7f32f29f.chunk.js",
-    "static/js/2.7f32f29f.chunk.js.map": "/static/js/2.7f32f29f.chunk.js.map",
+    "static/js/2.2a295841.chunk.js": "/static/js/2.2a295841.chunk.js",
+    "static/js/2.2a295841.chunk.js.map": "/static/js/2.2a295841.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.7654f3b7.chunk.css.map": "/static/css/main.7654f3b7.chunk.css.map",
-    "static/js/2.7f32f29f.chunk.js.LICENSE.txt": "/static/js/2.7f32f29f.chunk.js.LICENSE.txt",
+    "static/css/main.0ec8199e.chunk.css.map": "/static/css/main.0ec8199e.chunk.css.map",
+    "static/js/2.2a295841.chunk.js.LICENSE.txt": "/static/js/2.2a295841.chunk.js.LICENSE.txt",
     "static/media/chat-app.b8e34b98.png": "/static/media/chat-app.b8e34b98.png",
     "static/media/handwritten-digits.2cca06e8.png": "/static/media/handwritten-digits.2cca06e8.png",
     "static/media/HomePage.min.css": "/static/media/logo2.c33fd20d.jpeg",
     "static/media/neural-network.32ef5440.jpg": "/static/media/neural-network.32ef5440.jpg",
-    "static/media/resume.b6596f8b.pdf": "/static/media/resume.b6596f8b.pdf"
+    "static/media/resume.676a93d5.pdf": "/static/media/resume.676a93d5.pdf"
   },
   "entrypoints": [
     "static/js/runtime-main.a06e69b5.js",
-    "static/js/2.7f32f29f.chunk.js",
-    "static/css/main.7654f3b7.chunk.css",
-    "static/js/main.bf2122c2.chunk.js"
+    "static/js/2.2a295841.chunk.js",
+    "static/css/main.0ec8199e.chunk.css",
+    "static/js/main.0493fb46.chunk.js"
   ]
 }

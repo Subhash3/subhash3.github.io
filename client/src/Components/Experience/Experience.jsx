@@ -7,15 +7,21 @@ import './Experience.min.css'
 
 const myWorks = [
     {
+        title: "Digital Technology Intern",
+        place: "GE Digital",
+        date: "10th Jan 2022 to Present",
+        info: "I am currently working with the technologies React and Dagster."
+    }, {
+        title: "Full Stack Developer",
+        // place: "theyoundminds.org",
+        place: "The Young Minds",
+        date: "13th Sep 2020 to 31st March 2021",
+        info: "I worked as a full (Mern) stack developer. During the period, I build a Real-Time Chat Application and Live Streaming platform."
+    },{
         title: "Web-app Security Intern",
         place: "IIT Kanpur",
         date: "12th May 2019 to 07th July 2019",
         info: "I worked as a Web Application Security intern. As part of the internship, I built a proxy firewall using python."
-    }, {
-        title: "Full Stack Developer",
-        place: "theyoundminds.org",
-        date: "13th Sep 2020 to 31st March 2021",
-        info: "I worked as a full (Mern) stack developer. During the period, I build a Real-Time Chat Application and Live Streaming platform."
     }
     // , {
     //     title: "Another Project/Internship",

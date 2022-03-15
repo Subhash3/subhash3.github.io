@@ -8,6 +8,7 @@ import Experience from './Components/Experience/Experience'
 import GetInTouch from './Components/GetInTouch/GetInTouch'
 import Projects from './Components/Projects/Projects'
 import AboutMe from './Components/AboutMe/AboutMe'
+import Achievements from './Components/Achievements/Achievements';
 
 import './App.css';
 
@@ -20,8 +21,9 @@ function App() {
         <HomePage />
         <Projects />
         <Experience />
-        <GetInTouch />
-        <AboutMe />
+        <Achievements />
+        {/* <GetInTouch /> */}
+        {/* <AboutMe /> */}
       </div>
     </Provider>
   );

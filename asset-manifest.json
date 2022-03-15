@@ -1,25 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.0ec8199e.chunk.css",
-    "main.js": "/static/js/main.0493fb46.chunk.js",
-    "main.js.map": "/static/js/main.0493fb46.chunk.js.map",
+    "main.css": "/static/css/main.90819101.chunk.css",
+    "main.js": "/static/js/main.b4baba34.chunk.js",
+    "main.js.map": "/static/js/main.b4baba34.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.a06e69b5.js",
     "runtime-main.js.map": "/static/js/runtime-main.a06e69b5.js.map",
     "static/js/2.2a295841.chunk.js": "/static/js/2.2a295841.chunk.js",
     "static/js/2.2a295841.chunk.js.map": "/static/js/2.2a295841.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.0ec8199e.chunk.css.map": "/static/css/main.0ec8199e.chunk.css.map",
+    "static/css/main.90819101.chunk.css.map": "/static/css/main.90819101.chunk.css.map",
     "static/js/2.2a295841.chunk.js.LICENSE.txt": "/static/js/2.2a295841.chunk.js.LICENSE.txt",
+    "static/media/cc-logo-mobile-1.076788e1.svg": "/static/media/cc-logo-mobile-1.076788e1.svg",
     "static/media/chat-app.b8e34b98.png": "/static/media/chat-app.b8e34b98.png",
+    "static/media/coding.4cac1175.jpg": "/static/media/coding.4cac1175.jpg",
     "static/media/handwritten-digits.2cca06e8.png": "/static/media/handwritten-digits.2cca06e8.png",
+    "static/media/hcl_banner_1.b4ed2f2d.png": "/static/media/hcl_banner_1.b4ed2f2d.png",
     "static/media/HomePage.min.css": "/static/media/logo2.c33fd20d.jpeg",
     "static/media/neural-network.32ef5440.jpg": "/static/media/neural-network.32ef5440.jpg",
-    "static/media/resume.676a93d5.pdf": "/static/media/resume.676a93d5.pdf"
+    "static/media/resume.676a93d5.pdf": "/static/media/resume.676a93d5.pdf",
+    "static/media/young-minds-logo.93484247.png": "/static/media/young-minds-logo.93484247.png"
   },
   "entrypoints": [
     "static/js/runtime-main.a06e69b5.js",
     "static/js/2.2a295841.chunk.js",
-    "static/css/main.0ec8199e.chunk.css",
-    "static/js/main.0493fb46.chunk.js"
+    "static/css/main.90819101.chunk.css",
+    "static/js/main.b4baba34.chunk.js"
   ]
 }

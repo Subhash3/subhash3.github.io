@@ -11,6 +11,13 @@ import './Projects.min.css'
 
 const projects = [
     {
+        title: "Sorting Visualizer",
+        imageUrl: "",
+        info: `An interactive web application to visualize six sorting algorithms.
+                Implemented in React + Typescript`,
+        url: "https://subhash3.github.io/sorting-visualizer/"
+    },
+    {
         title: "Feed Forward Neural Networks",
         imageUrl: neuralNetworkImage,
         info: `Fully functional feed forward neural networks library from scratch.
@@ -39,12 +46,13 @@ const projects = [
         info: `REST API which provides the next 3 weeks' predictions of covid19 cases for several countries.
                Implemented using NodeJs and Express.`,
         url: "http://152.67.162.241:3000"
-    }, {
-        title: "Pima Diabetes Classifier",
-        imageUrl: '',
-        info: `Classification of Pima Indian Diabetes dataset using neural networks. `,
-        url: "https://github.com/Subhash3/Pima-Indians-Diabetes"
     },
+    // {
+    //     title: "Pima Diabetes Classifier",
+    //     imageUrl: '',
+    //     info: `Classification of Pima Indian Diabetes dataset using neural networks. `,
+    //     url: "https://github.com/Subhash3/Pima-Indians-Diabetes"
+    // },
 ]
 
 const Projects = () => {

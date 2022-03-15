@@ -10,7 +10,7 @@ const myWorks = [
         title: "Digital Technology Intern",
         place: "GE Digital",
         date: "10th Jan 2022 to Present",
-        info: "I am currently working with the technologies React and Dagster."
+        info: "I am currently working here with the technologies React and Dagster."
     }, {
         title: "Full Stack Developer",
         // place: "theyoundminds.org",

@@ -7,13 +7,18 @@ import './Experience.min.css'
 
 const myWorks = [
     {
+        title: "Software Engineer",
+        place: "GE Digital",
+        date: "Aug 2022 to Present",
+        info: "I am currently working here"
+    },
+    {
         title: "Digital Technology Intern",
         place: "GE Digital",
-        date: "10th Jan 2022 to Present",
-        info: "I am currently working here with the technologies React and Dagster."
+        date: "Jan 2022 to July 2022",
+        info: "Designed and developed a fully customizable dashboard with ReactJs for a product called Industrial Data Diagnostics. And also researched on various solutions to implement a data ingestion pipeline and built appropriate prototypes."
     }, {
         title: "Full Stack Developer",
-        // place: "theyoundminds.org",
         place: "The Young Minds",
         date: "13th Sep 2020 to 31st March 2021",
         info: "I worked as a full (Mern) stack developer. During the period, I build a Real-Time Chat Application and Live Streaming platform."
@@ -23,12 +28,6 @@ const myWorks = [
         date: "12th May 2019 to 07th July 2019",
         info: "I worked as a Web Application Security intern. As part of the internship, I built a proxy firewall using python."
     }
-    // , {
-    //     title: "Another Project/Internship",
-    //     place: "Some weird place",
-    //     date: "Donno to Donno",
-    //     info: "I wish I had done some ML internships and projects. But I don't. Pray for me!"
-    // },
 ]
 
 const Experience = () => {

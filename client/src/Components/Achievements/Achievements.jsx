@@ -4,6 +4,7 @@ import HackmakersLogo from '../../Images/hackmakers.png'
 import CodingLogo from '../../Images/coding.jpg'
 import YoungMindsLogo from '../../Images/young-minds-logo.png'
 import HCLBanner1 from '../../Images/hcl_banner_1.png'
+import AwardLogo from '../../Images/award-green.png'
 
 import './Achievements.min.css'
 
@@ -13,6 +14,12 @@ const achievements = [
         info: "Bagged the first place among 4500 participants in Predictive Algorithm Challenge as part of the team T-Cube",
         url: "",
         logo: HackmakersLogo
+    },
+    {
+        text: "\"Impact Award\" winner at GE",
+        info: "One of the awardees of the \"Impact Award\" under the category of \"Deliver with Focus\" during the Engineering Recognition Day, 2023 at GE",
+        url: "",
+        logo: ""
     },
     {
         text: "Codechef Certified Programmer",
@@ -33,7 +40,7 @@ const achievements = [
         logo: HCLBanner1
     },
     {
-        text: "Intern of the year at the Young Minds",
+        text: "\"Intern of the year\" at the Young Minds",
         info: "",
         url: "",
         logo: YoungMindsLogo
@@ -64,7 +71,7 @@ function Achievement({ achievementObj, i }) {
     return (
         <div className="achievement" style={style}>
             <div className="icon">
-                <img src={`${achievementObj.logo}`} alt="" />
+                <img src={`${AwardLogo}`} alt="" />
             </div>
             <div className="content">
                 <div className="text">

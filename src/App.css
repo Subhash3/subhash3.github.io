@@ -1,7 +1,9 @@
+@import url("@fontsource/cascadia-code");
+
 .App {
   position: relative;
   text-align: center;
-  font-family: 'Fira Mono', 'Monospace';
+  font-family: 'Cascadia Code', 'Monospace';
   min-height: 100vh;
 }
 

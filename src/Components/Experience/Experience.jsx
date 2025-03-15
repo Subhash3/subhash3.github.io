@@ -8,17 +8,17 @@ import './Experience.min.css'
 const myWorks = [
     {
         title: "Software Engineer",
-        place: "GE Digital",
+        place: "GE Vernova",
         date: "Aug 2022 to Present",
         info: "I am currently working here"
     },
     {
         title: "Digital Technology Intern",
-        place: "GE Digital",
+        place: "GE Vernova",
         date: "Jan 2022 to July 2022",
         info: "Designed and developed a fully customizable dashboard with ReactJs for a product called Industrial Data Diagnostics. And also researched on various solutions to implement a data ingestion pipeline and built appropriate prototypes."
     }, {
-        title: "Full Stack Developer",
+        title: "Full Stack Developer Intern",
         place: "The Young Minds",
         date: "13th Sep 2020 to 31st March 2021",
         info: "I worked as a full (Mern) stack developer. During the period, I build a Real-Time Chat Application and Live Streaming platform."

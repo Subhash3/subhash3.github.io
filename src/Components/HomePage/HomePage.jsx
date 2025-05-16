@@ -13,7 +13,8 @@ import Jump from 'react-reveal/Jump'
 import './HomePage.min.css'
 
 const HomePage = () => {
-    const subtitleArr = ["Full Stack Developer", "Deep Learning Enthusiast"]
+    // const subtitleArr = ["Full Stack Developer", "Deep Learning Enthusiast"]
+    const subtitleArr = ["Software Engineer @GE Vernova"]
 
     return (
         <div className="home-page">

@@ -50,7 +50,7 @@ const HomePage = () => {
                     </HeadShake> */}
                     <HeadShake delay={600}>
                         {/* <div className="resume btn" onClick={openResume}>Resume</div> */}
-                        <a href={resume} className="btn" download>Resume</a>
+                        <a href={resume} className="btn" nice='true' download>Resume</a>
                     </HeadShake>
                 </div>
             </div>
